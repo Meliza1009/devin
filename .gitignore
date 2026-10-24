@@ -1,0 +1,12 @@
+.gradle/
+.tools/
+**/build/
+local.properties
+.idea/
+*.iml
+.superdesign/tmp/
+artifacts/*.apk
+__pycache__/
+*.pyc
+bin/
+*.class

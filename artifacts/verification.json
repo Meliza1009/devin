@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-24T21:08:11.238064+00:00",
+  "artifact": "GhostProtocol.apk",
+  "sha256": "313f359a9a5e232145663392adbff14903f359c137b286261c8d8b3d85e655e0",
+  "core_tests": 25,
+  "core_failures": 0,
+  "native_ui_scenarios": 8,
+  "native_ui_evidence": "ui-smoke.txt",
+  "lint_issues": {
+    "debug": 0,
+    "release": 0
+  },
+  "apk_signature": "APK v2 verified by apksigner",
+  "release_install_and_launch": "passed on Android 14 emulator",
+  "release_launch_screenshot": "release-home.png",
+  "minimum_android_sdk": 28,
+  "target_android_sdk": 36,
+  "internet_permission": false,
+  "debuggable": false,
+  "contains_test_runner": false,
+  "bluetooth_transport_test_environment": "Android Bluetooth LE emulation; production Session and BleMesh code",
+  "bluetooth_scenarios": [
+    {
+      "evidence": "mesh-4-phones.json",
+      "status": "passed",
+      "android_runtimes": 4,
+      "winner": "HUNTERS",
+      "matching_final_state_digest": "f642b2bdfd01310bc74c30acabf36e2bc7953bb34fc9c558c2031b82238f2fda"
+    },
+    {
+      "evidence": "mesh-4-phones-reconnect.json",
+      "status": "passed",
+      "android_runtimes": 4,
+      "winner": "HUNTERS",
+      "matching_final_state_digest": "f31fb8db6cf0c5af11a6b27d2f613cebfe9511bf5cdabeafe7a3ea49a9a5b175"
+    },
+    {
+      "evidence": "mesh-4-phones-timeout.json",
+      "status": "passed",
+      "android_runtimes": 4,
+      "winner": "NONE",
+      "matching_final_state_digest": "bbdfd7c39ed32faaafdb0d4580a5e119129162c30f935664eb9a78375cf6dfed"
+    }
+  ],
+  "timeout_reconnection_evidence": "mesh-4-phones-timeout.observations.json",
+  "remaining": [
+    "Physical Bluetooth interoperability with 4 and 8 Android phones",
+    "Real-device radio recovery and proximity/game balance"
+  ]
+}

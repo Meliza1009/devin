@@ -1,0 +1,26 @@
+{
+  "emulator-5554": {
+    "name": "Peer1",
+    "self": "5f9d94b0a6da9d8e",
+    "members": 2,
+    "links": 1,
+    "screen": "LOBBY",
+    "status": "Encrypted local links active.",
+    "message": "",
+    "ready": 0,
+    "revision": 0,
+    "missing": "[]"
+  },
+  "emulator-5556": {
+    "name": "Peer2",
+    "self": "4ed0a11138d02a82",
+    "members": 2,
+    "links": 1,
+    "screen": "LOBBY",
+    "status": "Encrypted local links active.",
+    "message": "",
+    "ready": 0,
+    "revision": 0,
+    "missing": "[]"
+  }
+}

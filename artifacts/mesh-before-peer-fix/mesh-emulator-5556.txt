@@ -1,0 +1,144 @@
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":1,"links":0,"screen":"LOBBY","status":"Opening local radio…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":1,"links":0,"screen":"LOBBY","status":"Discovering phones in this room…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":1,"links":0,"screen":"LOBBY","status":"Discovering phones in this room…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":2,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":2,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":2,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":3,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":3,"screen":"LOBBY","status":"Discovering phones in this room…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":2,"screen":"LOBBY","status":"Discovering phones in this room…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":1,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":1,"screen":"LOBBY","status":"Discovering phones in this room…","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":3,"links":2,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":2,"revision":0,"missing":"[]","phase":"CALIBRATING","elapsed_ms":0,"winner":"","digest":"7a9f86ffd9b0b67148230fedf19f2e3d660f7e87905c0dab89760253e247b189","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":0,"missing":"[]","phase":"CALIBRATING","elapsed_ms":0,"winner":"","digest":"7a9f86ffd9b0b67148230fedf19f2e3d660f7e87905c0dab89760253e247b189","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":0,"missing":"[]","phase":"CALIBRATING","elapsed_ms":0,"winner":"","digest":"7a9f86ffd9b0b67148230fedf19f2e3d660f7e87905c0dab89760253e247b189","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":2,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":1,"missing":"[]","phase":"CALIBRATING","elapsed_ms":2076,"winner":"","digest":"e04df5444b77b7a48415e84b980d6d827a87e07dd132eb7123785faa7a22f922","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":2,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":1,"missing":"[]","phase":"CALIBRATING","elapsed_ms":2076,"winner":"","digest":"e04df5444b77b7a48415e84b980d6d827a87e07dd132eb7123785faa7a22f922","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":2,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":1,"missing":"[5d618d3219f7417e]","phase":"CALIBRATING","elapsed_ms":2076,"winner":"","digest":"e04df5444b77b7a48415e84b980d6d827a87e07dd132eb7123785faa7a22f922","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":1,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":1,"missing":"[]","phase":"CALIBRATING","elapsed_ms":2076,"winner":"","digest":"e04df5444b77b7a48415e84b980d6d827a87e07dd132eb7123785faa7a22f922","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":2,"missing":"[]","phase":"CALIBRATING","elapsed_ms":7076,"winner":"","digest":"cc61f99bf792d883fe3914bc078e4678a28a64eb69747216ac650b0ac21be4ba","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":2,"missing":"[]","phase":"CALIBRATING","elapsed_ms":7076,"winner":"","digest":"cc61f99bf792d883fe3914bc078e4678a28a64eb69747216ac650b0ac21be4ba","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":2,"missing":"[]","phase":"CALIBRATING","elapsed_ms":7076,"winner":"","digest":"cc61f99bf792d883fe3914bc078e4678a28a64eb69747216ac650b0ac21be4ba","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":3,"missing":"[663fe8b0ceb6c3c8]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"33d99bc30b6ee85b2cef2f58c628b47c7e79ba9397fd521d1a904b4cba9092e0","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":3,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"33d99bc30b6ee85b2cef2f58c628b47c7e79ba9397fd521d1a904b4cba9092e0","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":3,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"33d99bc30b6ee85b2cef2f58c628b47c7e79ba9397fd521d1a904b4cba9092e0","observations":0,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":4,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"6a535ec20c4756a51bcd0ad04d0a45c238c76e3c3aa08ae21af75a04f12a0676","observations":1,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":4,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"6a535ec20c4756a51bcd0ad04d0a45c238c76e3c3aa08ae21af75a04f12a0676","observations":1,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":4,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"6a535ec20c4756a51bcd0ad04d0a45c238c76e3c3aa08ae21af75a04f12a0676","observations":1,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":4,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"6a535ec20c4756a51bcd0ad04d0a45c238c76e3c3aa08ae21af75a04f12a0676","observations":1,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":5,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"f9e8abbc3cab3aa32e1b88f896b2024b338c167611ef68cd4bdf853329f29472","observations":2,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":6,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"99547c57ce2099f975bfcccf408e7027060d94c72fea87d8daec5217bc3c7270","observations":3,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":6,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"99547c57ce2099f975bfcccf408e7027060d94c72fea87d8daec5217bc3c7270","observations":3,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":6,"missing":"[663fe8b0ceb6c3c8]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"99547c57ce2099f975bfcccf408e7027060d94c72fea87d8daec5217bc3c7270","observations":3,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":6,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"99547c57ce2099f975bfcccf408e7027060d94c72fea87d8daec5217bc3c7270","observations":3,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":7,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"381661ce8d260f72bab5dd7816cf1f4f0fc6eb261999ccca863ad3aca92babca","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":7,"missing":"[]","phase":"CALIBRATING","elapsed_ms":12076,"winner":"","digest":"381661ce8d260f72bab5dd7816cf1f4f0fc6eb261999ccca863ad3aca92babca","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":8,"missing":"[]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":8,"missing":"[]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":8,"missing":"[]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":8,"missing":"[]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":8,"missing":"[]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":8,"missing":"[663fe8b0ceb6c3c8]","phase":"CALIBRATING","elapsed_ms":17076,"winner":"","digest":"b2c2c78a096e4401b721a6f56f3086031df74cac242690e3d76fee87d11a722b","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=RADIO_FAILURE Peer2 java.lang.AssertionError: Radio test timed out: {"name":"Peer2","self":"25bda7ca5923fd8e","members":4,"links":4,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":9,"missing":"[]","phase":"CALIBRATING","elapsed_ms":19125,"winner":"","digest":"b924efc3f74dc2550c6855c324172f64a1052326df66a8bd13a0bfbc512b276e","observations":4,"ghost":true,"fade_used":false,"echo_used":false}
+
+INSTRUMENTATION_CODE: 0

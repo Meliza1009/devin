@@ -1,0 +1,36 @@
+plugins { id 'com.android.application' }
+def releaseStore = providers.environmentVariable('GHOST_SIGNING_STORE').orNull
+android {
+    namespace 'com.ghostprotocol.app'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.ghostprotocol.app'
+        minSdk 28
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+        testInstrumentationRunner 'com.ghostprotocol.app.SmokeInstrumentation'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17; coreLibraryDesugaringEnabled true }
+    lint { abortOnError true; warningsAsErrors false }
+    signingConfigs {
+        if (releaseStore != null) {
+            localRelease {
+                storeFile file(releaseStore)
+                storePassword providers.environmentVariable('GHOST_SIGNING_PASSWORD').get()
+                keyAlias 'ghost'
+                keyPassword providers.environmentVariable('GHOST_SIGNING_PASSWORD').get()
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (releaseStore != null) signingConfig signingConfigs.localRelease
+        }
+    }
+}
+dependencies {
+    implementation project(':core')
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
+}
