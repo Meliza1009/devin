@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 75,
+  "paused_peers": [
+    "emulator-5554",
+    "emulator-5556",
+    "emulator-5558",
+    "emulator-5560"
+  ],
+  "reconnected_peers": [
+    "emulator-5554",
+    "emulator-5556",
+    "emulator-5558",
+    "emulator-5560"
+  ],
+  "late_reconnection_revived_round": false
+}

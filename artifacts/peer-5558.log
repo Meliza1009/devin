@@ -5,24 +5,24 @@ INFO         | Changing default hw.initialOrientation to portrait
 
 INFO         | Feature 'BluetoothEmulation' (86) is overridden to 'enabled'
 INFO         | IPv4 server found: 10.252.235.251
-INFO         | Ignore IPv6 address: fd:6aab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: fd:6aab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: fd:6aab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 7003:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 7003:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 7003:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 8809:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 8809:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 8809:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 4819:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 4819:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 4819:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: a81f:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: a81f:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: a81f:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 9025:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 9025:6bab:b101:0:fd:6aab:b101:0
-INFO         | Ignore IPv6 address: 9025:6bab:b101:0:fd:6aab:b101:0
+INFO         | Ignore IPv6 address: 30c6:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: 30c6:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: 30c6:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: a0cc:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: a0cc:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: a0cc:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: b8d2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: b8d2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: b8d2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: 78e2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: 78e2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: 78e2:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: d8e8:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: d8e8:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: d8e8:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: c0ee:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: c0ee:f3be:1702:0:30c6:f3be:1702:0
+INFO         | Ignore IPv6 address: c0ee:f3be:1702:0:30c6:f3be:1702:0
 INFO         | Guest GLES Driver: Auto (ext controls)
 library_mode swiftshader_indirect gpu mode swiftshader_indirect
 INFO         | Checking system compatibility:
@@ -34,7 +34,7 @@ INFO         |   Checking: hasSufficientHwGpu
 INFO         |      Ok: Hardware GPU compatibility checks are not required
 INFO         |   Checking: hasSufficientDiskSpace
 INFO         |      Ok: Disk space requirements to run avd: `GhostPeer3` are met
-INFO         | Storing crashdata in: C:\Users\Admin\AppData\Local\Temp\\AndroidEmulator\emu-crash-36.3.10.db, detection is enabled for process: 27008
+INFO         | Storing crashdata in: C:\Users\Admin\AppData\Local\Temp\\AndroidEmulator\emu-crash-36.3.10.db, detection is enabled for process: 28900
 INFO         | Initializing gfxstream backend
 INFO         | android_startOpenglesRenderer: gpu info
 INFO         | GPU #1
@@ -105,15 +105,16 @@ INFO         |   androidboot.vbmeta.hash_alg=sha256
 INFO         |   androidboot.vbmeta.size=6656
 INFO         |   androidboot.veritymode=enforcing
 WHPX on Windows 10.0.26200 detected.
+INFO         | Activated packet streamer for bluetooth emulation
 Windows Hypervisor Platform accelerator is operational
 INFO         | Monitoring duration of emulator setup.
 INFO         | Setting display: 0 configuration to: 480x800, dpi: 160x160 
 INFO         | setDisplayActiveConfig 0
-INFO         | Activated packet streamer for bluetooth emulation
-INFO         | Boot completed in 124574 ms
+INFO         | Boot completed in 63203 ms
 INFO         | Increasing screen off timeout, logcat buffer size to 2M.
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+ERROR        | adb protocol fault (couldn't read status length)
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
@@ -126,116 +127,117 @@ WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-to
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+ERROR        | adb protocol fault (couldn't read status length)
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
 WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
-WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
 INFO         | IPv4 server found: 10.252.235.251
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
 INFO         | IPv4 server found: 10.252.235.251
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
 INFO         | IPv4 server found: 10.252.235.251
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: b060:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 2067:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 386d:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: f87c:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 5883:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Ignore IPv6 address: 4089:4e8d:b101:0:b060:4e8d:b101:0
-INFO         | Wait for emulator (pid 27008) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 3095:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: a09b:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: b8a1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: 78b1:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: d8b7:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+INFO         | Ignore IPv6 address: c0bd:6381:1702:0:3095:6381:1702:0
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system screen_off_timeout 2147483647 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell logcat -G 2M ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell settings put system accelerometer_rotation 1 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
+WARNING      | adb command 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -e shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver --user 0 ' failed: 'adb.exe: more than one emulator'
+INFO         | Wait for emulator (pid 28900) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
 
 WARNING      | Not saving state: RAM not mapped as shared
-INFO         | Saving snapshot 'default_boot' using 8 ms
+INFO         | Saving snapshot 'default_boot' using 14 ms
 WARNING      | Emulator client has not yet been configured.. Call configure me first!

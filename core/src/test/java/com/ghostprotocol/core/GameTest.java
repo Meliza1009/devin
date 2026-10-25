@@ -2,183 +2,137 @@ package com.ghostprotocol.core;
 
 import static org.junit.Assert.*;
 
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import org.junit.Test;
 
-public class GameTest {
-  private Game game() {
-    return new Game(
-        List.of(
-            new Game.Player("a", "Ada"),
-            new Game.Player("b", "Bo"),
-            new Game.Player("c", "Cy"),
-            new Game.Player("d", "Dee")),
-        "d",
-        42);
-  }
-
-  private void advance(Game g, int seconds) {
-    for (int i = 0; i < seconds; i++) g.apply(Game.Event.tick(1000, g.ids()));
-  }
-
-  private void evidence(Game g, String target) {
-    for (int i = 0; i < 3; i++) {
-      g.apply(Game.Event.observation("a", 2, List.of(target)));
-      g.apply(Game.Event.observation("b", 2, List.of(target)));
-      if (i < 2) advance(g, 10);
-    }
+public class GameTest extends HeistFixtures {
+  @Test
+  public void votesRequireStrictMajorityForEightPlayers() {
+    List<Game.Player> ps = new ArrayList<>();
+    for (int n = 0; n < 8; n++) ps.add(new Game.Player("p" + n, "P" + n));
+    Game g = new Game(ps, "p7", 1);
+    advance(g, 90);
+    ok(g, Game.Event.tag("p0", "p7"));
+    ok(g, Game.Event.vote("p1", true));
+    ok(g, Game.Event.vote("p2", true));
+    assertFalse(g.exposed);
+    ok(g, Game.Event.vote("p3", true));
+    assertTrue(g.exposed);
   }
 
   @Test
-  public void calibrationBlocksTagsAndExpires() {
-    Game g = game();
-    assertEquals(Game.Phase.CALIBRATING, g.phase);
-    assertFalse(g.apply(Game.Event.tag("a", "d")).isEmpty());
-    advance(g, 30);
-    assertEquals(Game.Phase.HUNT, g.phase);
-    assertEquals(450000, g.remainingMs());
-  }
-
-  @Test
-  public void evidenceNeedsIndependentObserversAndDistinctIntervals() {
-    Game g = game();
-    advance(g, 30);
-    for (int i = 0; i < 4; i++) {
-      g.apply(Game.Event.observation("a", 2, List.of("d")));
-      advance(g, 10);
-    }
-    assertFalse(g.evidence("d").eligible());
-    g.apply(Game.Event.observation("b", 2, List.of("d")));
-    assertTrue(g.evidence("d").eligible());
-    advance(g, 91);
-    assertFalse(g.evidence("d").eligible());
-  }
-
-  @Test
-  public void correctConvictionNeedsMajorityAndNearbyTag() {
-    Game g = game();
-    advance(g, 30);
-    evidence(g, "d");
-    assertFalse(g.apply(Game.Event.tag("c", "d")).isEmpty());
-    assertEquals("", g.apply(Game.Event.tag("a", "d")));
-    assertEquals(Game.Phase.HUNT, g.phase);
-    g.apply(Game.Event.vote("b", true));
-    assertEquals(Game.Phase.ENDED, g.phase);
-    assertEquals("HUNTERS", g.winner);
-  }
-
-  @Test
-  public void wrongConvictionClearsSuspectAndCostsTime() {
-    Game g = game();
-    advance(g, 30);
-    evidence(g, "c");
-    int before = g.remainingMs();
-    g.apply(Game.Event.tag("a", "c"));
-    g.apply(Game.Event.vote("b", true));
-    assertTrue(g.cleared.contains("c"));
-    assertEquals(before - 45000, g.remainingMs());
-    assertEquals(3, g.charges);
-    assertTrue(g.cooldownUntil > g.elapsedMs);
-    advance(g, 31);
-    assertFalse(g.apply(Game.Event.tag("a", "c")).isEmpty());
-  }
-
-  @Test
-  public void abstentionsFailVoteAndNoRoleIsRevealed() {
-    Game g = game();
-    advance(g, 30);
-    evidence(g, "c");
-    g.apply(Game.Event.tag("a", "c"));
-    advance(g, 15);
-    assertNull(g.vote);
-    assertTrue(g.cleared.isEmpty());
-    assertEquals(0, g.penaltyMs);
-  }
-
-  @Test
-  public void ghostAbilitiesUseChargesCooldownAndRecentEncounters() {
-    Game g = game();
-    advance(g, 30);
-    assertFalse(g.apply(Game.Event.ability("a", "FADE", "")).isEmpty());
-    assertFalse(g.apply(Game.Event.ability("d", "ECHO", "b")).isEmpty());
-    g.apply(Game.Event.observation("d", 1, List.of("b")));
-    assertEquals("", g.apply(Game.Event.ability("d", "ECHO", "b")));
-    assertEquals(1, g.charges);
-    assertFalse(g.apply(Game.Event.ability("d", "FADE", "")).isEmpty());
-    advance(g, 31);
-    assertEquals("", g.apply(Game.Event.ability("d", "FADE", "")));
-    assertEquals(0, g.charges);
-  }
-
-  @Test
-  public void timerExpiryOverridesUnresolvedVote() {
-    Game g = game();
-    advance(g, 455);
-    evidence(g, "d");
-    assertEquals("", g.apply(Game.Event.tag("a", "d")));
-    assertNotNull(g.vote);
-    advance(g, 5);
-    assertEquals(Game.Phase.ENDED, g.phase);
-    assertEquals("GHOST", g.winner);
-  }
-
-  @Test
-  public void missingPhonePausesThenAborts() {
-    Game g = game();
-    advance(g, 30);
-    int before = g.remainingMs();
-    for (int i = 0; i < 10; i++) g.apply(Game.Event.tick(1000, Set.of("a", "b", "c")));
-    assertTrue(g.paused);
-    assertEquals(before, g.remainingMs());
-    for (int i = 0; i < 60; i++) g.apply(Game.Event.tick(1000, Set.of("a", "b", "c")));
-    assertEquals("NONE", g.winner);
-  }
-
-  @Test
-  public void serializationIsCanonicalAndResumable() throws Exception {
-    Game g = game();
-    advance(g, 30);
-    evidence(g, "c");
-    g.apply(Game.Event.tag("a", "c"));
-    Game restored = Game.decode(g.encode());
-    assertArrayEquals(g.encode(), restored.encode());
-    restored.apply(Game.Event.vote("b", true));
-    g.apply(Game.Event.vote("b", true));
-    assertArrayEquals(g.encode(), restored.encode());
-  }
-
-  @Test
-  public void inputValidationDoesNotChangeState() throws Exception {
+  public void rejectedActionDoesNotChangeState() {
     Game g = game();
     byte[] before = g.encode();
-    assertFalse(g.apply(Game.Event.observation("outsider", 2, List.of("d"))).isEmpty());
+    assertFalse(g.apply(Game.Event.deposit("a", "key")).isEmpty());
     assertArrayEquals(before, g.encode());
   }
 
   @Test
-  public void firstReadingRequiresACompleteTenSecondInterval() {
+  public void firstSignalWaitsForCompleteInterval() {
     Game g = game();
-    advance(g, 9);
-    assertFalse(g.apply(Game.Event.observation("a", 2, List.of("d"))).isEmpty());
-    advance(g, 1);
-    assertEquals("", g.apply(Game.Event.observation("a", 2, List.of("d"))));
+    assertFalse(g.apply(Game.Event.observation("a", 2, List.of("b"))).isEmpty());
+    advance(g, 10);
+    ok(g, Game.Event.observation("a", 2, List.of("b")));
+    assertFalse(g.apply(Game.Event.observation("a", 2, List.of("b"))).isEmpty());
   }
 
   @Test
-  public void eightPlayersNeedFourVotesToConvict() {
-    List<Game.Player> players = new java.util.ArrayList<>();
-    for (char id = 'a'; id <= 'h'; id++)
-      players.add(new Game.Player(String.valueOf(id), String.valueOf(id)));
-    Game g = new Game(players, "h", 42);
-    advance(g, 30);
-    evidence(g, "h");
-    assertEquals("", g.apply(Game.Event.tag("a", "h")));
-    g.apply(Game.Event.vote("b", true));
-    g.apply(Game.Event.vote("c", true));
-    assertEquals(Game.Phase.HUNT, g.phase);
-    assertFalse(g.apply(Game.Event.vote("h", true)).isEmpty());
-    g.apply(Game.Event.vote("d", true));
-    assertEquals("HUNTERS", g.winner);
+  public void observationsExpireAndHistoryIsBounded() {
+    Game g = game();
+    advance(g, 10);
+    ok(g, Game.Event.observation("a", 2, List.of("b")));
+    advance(g, 91);
+    assertTrue(g.observations.isEmpty());
+  }
+
+  @Test
+  public void missingPhonesFreezeClockAndAbortAtSeventySeconds() {
+    Game g = game();
+    for (int n = 0; n < 10; n++) ok(g, Game.Event.tick(1000, Set.of("a", "b", "c")));
+    assertTrue(g.paused);
+    assertEquals(0, g.elapsedMs);
+    for (int n = 0; n < 60; n++) ok(g, Game.Event.tick(1000, Set.of("a", "b", "c")));
+    assertEquals("NONE", g.winner);
+  }
+
+  @Test
+  public void recoveryDoesNotConsumeRoundTime() {
+    Game g = game();
+    for (int n = 0; n < 12; n++) ok(g, Game.Event.tick(1000, Set.of("a", "b", "c")));
+    ok(g, Game.Event.tick(1000, g.ids()));
+    assertFalse(g.paused);
+    assertEquals(1000, g.elapsedMs);
+  }
+
+  @Test
+  public void ghostJamRequiresVisitAndRespectsEnergyAndProtection() {
+    Game g = game();
+    assertFalse(g.apply(Game.Event.ability("d", "JAM", "VAULT")).isEmpty());
+    ok(g, Game.Event.scan("d", Game.Station.VAULT));
+    ok(g, Game.Event.ability("d", "JAM", "VAULT"));
+    assertEquals(1, g.charges);
+    assertFalse(g.stationOpen(Game.Station.VAULT));
+    advance(g, 25);
+    assertTrue(g.stationOpen(Game.Station.VAULT));
+    assertFalse(g.apply(Game.Event.ability("d", "JAM", "VAULT")).isEmpty());
+  }
+
+  @Test
+  public void handoffNeedsConsentCapacityAndProximity() {
+    Game g = game();
+    pair(g, Game.Station.VAULT, "BREACH", "");
+    solve(g);
+    Game.Relic r = g.inventory("a").get(0);
+    ok(g, Game.Event.offer("a", r.id, "b"));
+    assertEquals("a", r.owner);
+    ok(g, Game.Event.accept("b", r.id));
+    assertEquals("b", r.owner);
+    assertTrue(g.offers.isEmpty());
+  }
+
+  @Test
+  public void failedPuzzleSpendsNoRelicAndRaisesAlarm() {
+    Game g = game();
+    pair(g, Game.Station.VAULT, "BREACH", "");
+    Game.Task t = g.taskFor("a");
+    ok(g, Game.Event.answer("a", t.id, (t.answerCode() + 1) % 64));
+    assertEquals(5, g.alarm);
+    assertTrue(g.inventory("a").isEmpty());
+    assertTrue(g.tasks.isEmpty());
+  }
+
+  @Test
+  public void eventsAreDeterministicNonRepeatingAndExpire() {
+    Game g = game();
+    Set<String> events = new HashSet<>();
+    for (int n = 0; n < 3; n++) {
+      advance(g, 120);
+      events.add(g.roomEvent);
+      assertTrue(g.eventUntil > g.elapsedMs);
+    }
+    assertEquals(3, events.size());
+    assertArrayEquals(g.encode(), g.copy().encode());
+  }
+
+  @Test
+  public void terminalAbortCannotBeOverwritten() {
+    Game g = game();
+    g.abort("Gone");
+    assertFalse(g.apply(Game.Event.tick(1000, g.ids())).isEmpty());
+    assertEquals("NONE", g.winner);
+  }
+
+  @Test
+  public void activePuzzleTimesOutButWaitingPartnerDoesNotRaiseAlarm() {
+    Game g = game();
+    ok(g, Game.Event.scan("a", Game.Station.VAULT));
+    ok(g, Game.Event.task("a", "BREACH", ""));
+    advance(g, 31);
+    assertTrue(g.tasks.isEmpty());
+    assertEquals(0, g.alarm);
+    pair(g, Game.Station.VAULT, "BREACH", "");
+    advance(g, 31);
+    assertEquals(5, g.alarm);
   }
 }

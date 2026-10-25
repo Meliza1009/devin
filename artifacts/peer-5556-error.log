@@ -1,5 +1,5 @@
-netsimd I 10-24 20:11:03.842 daemon\src\rust_main.rs:100 - netsim artifacts path: "C:\\Users\\Admin\\AppData\\Local\\Temp\\netsimd"
-netsimd I 10-24 20:11:03.857 daemon\src\rust_main.rs:103 - NetsimdArgs {
+netsimd I 10-24 23:09:56.194 daemon\src\rust_main.rs:100 - netsim artifacts path: "C:\\Users\\Admin\\AppData\\Local\\Temp\\netsimd"
+netsimd I 10-24 23:09:56.195 daemon\src\rust_main.rs:103 - NetsimdArgs {
     fd_startup_str: None,
     no_cli_ui: true,
     no_web_ui: true,
@@ -33,8 +33,8 @@ netsimd I 10-24 20:11:03.857 daemon\src\rust_main.rs:103 - NetsimdArgs {
     },
     rssi: None,
 }
-netsimd I 10-24 20:11:13.213 daemon\src\rust_main.rs:100 - netsim artifacts path: "C:\\Users\\Admin\\AppData\\Local\\Temp\\netsimd"
-netsimd I 10-24 20:11:13.213 daemon\src\rust_main.rs:103 - NetsimdArgs {
+netsimd I 10-24 23:10:25.715 daemon\src\rust_main.rs:100 - netsim artifacts path: "C:\\Users\\Admin\\AppData\\Local\\Temp\\netsimd"
+netsimd I 10-24 23:10:25.716 daemon\src\rust_main.rs:103 - NetsimdArgs {
     fd_startup_str: None,
     no_cli_ui: true,
     no_web_ui: true,

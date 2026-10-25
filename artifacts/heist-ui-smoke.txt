@@ -1,0 +1,61 @@
+INSTRUMENTATION_STATUS: stream=RUN Home and interactive field guide
+
+INSTRUMENTATION_STATUS_CODE: 1
+s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+INSTRUMENTATION_STATUS: stream=PASS Home and interactive field guide
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Offline printable checkpoint kit and QR decoding
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Offline printable checkpoint kit and QR decoding
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Private role reveal and practice start
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Private role reveal and practice start
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Stable controls and clock under callback bursts
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Stable controls and clock under callback bursts
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Waiting scan renewal, dossier graph and safe live help
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Waiting scan renewal, dossier graph and safe live help
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Touch-driven recovery, sealing, delivery and extraction
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Touch-driven recovery, sealing, delivery and extraction
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Ghost sabotage, cooldown and active showdown
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Ghost sabotage, cooldown and active showdown
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Large text keeps mission navigation and controls usable
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Large text keeps mission navigation and controls usable
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RUN Camera denial, permission and cancellation preserve the live session
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS Camera denial, permission and cancellation preserve the live session
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+GhostProtocol heist: PASS (9 scenarios)
+
+INSTRUMENTATION_CODE: -1

@@ -148,7 +148,7 @@ def run_peer(item):
         if 'RADIO_RESULT ' in line:
             result=json.loads(line.split('RADIO_RESULT ',1)[1])
     process.wait()
-    (artifacts/f'mesh-{scenario}-{serial}.txt').write_text(''.join(lines),encoding='utf-8')
+    (artifacts/f'heist-mesh-{scenario}-{serial}.txt').write_text(''.join(lines),encoding='utf-8')
     return serial,result
 
 with ThreadPoolExecutor(max_workers=len(args.serials)) as pool:
@@ -161,12 +161,12 @@ elif not args.lobby_only:
     assert len({result['digest'] for result in results.values()})==1,'Final state diverged'
     assert all(result['winner']=='HUNTERS' for result in results.values())
     ghost=next(result for result in results.values() if result['ghost'])
-    assert ghost['fade_used'] and ghost['echo_used'],'Ghost abilities were not exercised'
+    assert ghost['jam_used'] and ghost['corrupt_used'] and ghost['haunt_used'],'Heist sabotage and showdown were not exercised'
 if fault_requested:
     assert fault_started and fault_finished.is_set() and not fault_errors,f'Fault did not complete: {fault_errors}'
     assert paused_peers==set(args.serials),f'Pause not observed by every phone: {paused_peers}'
     assert resumed_peers==set(args.serials),f'Recovery not observed by every phone: {resumed_peers}'
-output=artifacts/('mesh-lobby.json' if args.lobby_only else f'mesh-{len(args.serials)}-phones'+('-timeout' if args.abandon_last_peer else '-reconnect' if args.interrupt_last_peer else '')+'.json')
+output=artifacts/('heist-mesh-lobby.json' if args.lobby_only else f'heist-mesh-{len(args.serials)}-phones'+('-timeout' if args.abandon_last_peer else '-reconnect' if args.interrupt_last_peer else '')+'.json')
 output.write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8')
 if fault_requested:
     output.with_suffix('.observations.json').write_text(json.dumps({'duration_seconds':75 if args.abandon_last_peer else 18,'paused_peers':sorted(paused_peers),'reconnected_peers':sorted(resumed_peers),'late_reconnection_revived_round':False if args.abandon_last_peer else None},indent=2)+'\n',encoding='utf-8')

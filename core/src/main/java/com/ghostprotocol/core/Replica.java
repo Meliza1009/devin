@@ -15,7 +15,7 @@ public final class Replica {
   public interface Listener {
     void changed();
 
-    void rejected(String actor, String reason);
+    void rejected(String actor, String requestId, String reason);
   }
 
   private final String self, leader;
@@ -30,6 +30,7 @@ public final class Replica {
   private final Map<String, byte[]> outgoingCommands = new LinkedHashMap<>();
   private final Set<String> acknowledgements = new TreeSet<>();
   private final Set<String> seenCommands = new LinkedHashSet<>();
+  private final Map<String, byte[]> rejectedCommands = new LinkedHashMap<>();
   private final ArrayDeque<Command> queue = new ArrayDeque<>();
 
   private record Command(String id, Game.Event event) {}
@@ -61,11 +62,12 @@ public final class Replica {
 
   public void submit(Game.Event event) {
     if (terminated) {
-      listener.rejected(event.actor, "This round has ended.");
+      listener.rejected(event.actor, event.requestId, "This round has ended.");
       return;
     }
     if (outgoingCommands.size() >= 16) {
-      listener.rejected(event.actor, "Wait for your previous actions to reach the room.");
+      listener.rejected(
+          event.actor, event.requestId, "Wait for your previous actions to reach the room.");
       return;
     }
     String id = RoomCrypto.newId();
@@ -96,7 +98,7 @@ public final class Replica {
     if (terminated) return;
     try {
       DataInputStream i = Wire.input(packet);
-      if (i.readInt() != 1) return;
+      if (i.readInt() != Game.VERSION) return;
       String type = Wire.string(i), sender = Wire.string(i);
       if (!game.ids().contains(sender)) return;
       switch (type) {
@@ -108,13 +110,17 @@ public final class Replica {
                 || (!e.type.equals("TICK") && !sender.equals(e.actor))
                 || (e.type.equals("TICK") && !sender.equals(leader))) return;
             if (seenCommands.contains(id)) {
-              receipt(id);
+              byte[] outcome = rejectedCommands.get(id);
+              if (outcome != null) network.send(outcome);
               return;
             }
             if (queue.size() >= 64) return;
-            receipt(id);
             seenCommands.add(id);
-            while (seenCommands.size() > 2048) seenCommands.remove(seenCommands.iterator().next());
+            while (seenCommands.size() > 2048) {
+              String oldest = seenCommands.iterator().next();
+              seenCommands.remove(oldest);
+              rejectedCommands.remove(oldest);
+            }
             queue.add(new Command(id, e));
             drain();
             break;
@@ -141,9 +147,6 @@ public final class Replica {
             sendAck("ACK", rev, hash);
             break;
           }
-        case "RECEIVED":
-          if (sender.equals(leader)) outgoingCommands.remove(Wire.string(i));
-          break;
         case "ACK":
           {
             long rev = i.readLong();
@@ -191,9 +194,12 @@ public final class Replica {
           }
         case "REJECT":
           if (sender.equals(leader)) {
-            String commandId = Wire.string(i), actor = Wire.string(i), reason = Wire.string(i);
-            outgoingCommands.remove(commandId);
-            listener.rejected(actor, reason);
+            String commandId = Wire.string(i),
+                actor = Wire.string(i),
+                requestId = Wire.string(i),
+                reason = Wire.string(i);
+            if (outgoingCommands.remove(commandId) != null)
+              listener.rejected(actor, requestId, reason);
           }
           break;
         default:
@@ -211,15 +217,18 @@ public final class Replica {
     String error = candidate.apply(command.event);
     outgoingCommands.remove(command.id);
     if (!error.isEmpty()) {
-      network.send(
+      byte[] outcome =
           packet(
               "REJECT",
               o -> {
                 Wire.string(o, command.id);
                 Wire.string(o, command.event.actor);
+                Wire.string(o, command.event.requestId);
                 Wire.string(o, error);
-              }));
-      listener.rejected(command.event.actor, error);
+              });
+      rejectedCommands.put(command.id, outcome);
+      network.send(outcome);
+      listener.rejected(command.event.actor, command.event.requestId, error);
       drain();
       return;
     }
@@ -250,6 +259,7 @@ public final class Replica {
     pending = null;
     queue.clear();
     outgoingCommands.clear();
+    rejectedCommands.clear();
     acknowledgements.clear();
     commitAcks.clear();
     preparePacket = null;
@@ -288,14 +298,10 @@ public final class Replica {
             }));
   }
 
-  private void receipt(String id) {
-    network.send(packet("RECEIVED", o -> Wire.string(o, id)));
-  }
-
   private byte[] packet(String type, Wire.Writer writer) {
     return Wire.bytes(
         o -> {
-          o.writeInt(1);
+          o.writeInt(Game.VERSION);
           Wire.string(o, type);
           Wire.string(o, self);
           writer.write(o);

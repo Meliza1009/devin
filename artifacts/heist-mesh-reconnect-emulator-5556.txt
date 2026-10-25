@@ -1,0 +1,192 @@
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":1,"links":0,"screen":"LOBBY","status":"Opening local radio…","message":"","ready":0,"revision":0,"missing":"[]","peak_links":0}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":2,"screen":"LOBBY","status":"Encrypted local links active.","message":"","ready":0,"revision":0,"missing":"[]","peak_links":2}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":1,"missing":"[]","phase":"HUNT","elapsed_ms":0,"winner":"","digest":"1fe2dde1ec68a16a4f225809533ddf51c6516ff6c48168e646a28a2456e0872b","observations":0,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"","ready":4,"revision":3,"missing":"[]","phase":"HUNT","elapsed_ms":5000,"winner":"","digest":"711827c09fd45f47951f41b4f3ab0017a0f72eb2ba8e1d4975a8764e2e41f6a7","observations":0,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":3,"missing":"[]","phase":"HUNT","elapsed_ms":5000,"winner":"","digest":"711827c09fd45f47951f41b4f3ab0017a0f72eb2ba8e1d4975a8764e2e41f6a7","observations":0,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":5,"missing":"[]","phase":"HUNT","elapsed_ms":10000,"winner":"","digest":"33728be84a60958567ecd4f4715035bd24a4e5fad62e38ed5989af9415a0555c","observations":0,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":6,"missing":"[]","phase":"HUNT","elapsed_ms":10000,"winner":"","digest":"615d4e4f95cea77df8a30d1a353de16ff285e0dbf860574d30d93bbe4c8923f2","observations":1,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":8,"missing":"[]","phase":"HUNT","elapsed_ms":10000,"winner":"","digest":"1675bd8b211be688804712013766fb1741baefeb8d15d7a44aac208177271ae7","observations":3,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":10,"missing":"[]","phase":"HUNT","elapsed_ms":10000,"winner":"","digest":"c66b0b3f1ec31f8cfeb80b7067bada12411ca84da9e52d1cf1a4337162513493","observations":3,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":12,"missing":"[]","phase":"HUNT","elapsed_ms":10000,"winner":"","digest":"bae4b635fb84fc7583394efeb4faf96823446ef44e85471167231f283448fa5a","observations":3,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":14,"missing":"[]","phase":"HUNT","elapsed_ms":20000,"winner":"","digest":"147f8e28e77730874d793f22ec6edf6b32d0d10144c81829f906abb9af1c5a22","observations":3,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":16,"missing":"[]","phase":"HUNT","elapsed_ms":20000,"winner":"","digest":"7eae9f24ad9e6d40d23f57890d3180befed486cd5b9ed8cd619f8035253929f9","observations":5,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":18,"missing":"[]","phase":"HUNT","elapsed_ms":25000,"winner":"","digest":"20276f695b4e1b1b416bae0c26c3ae01c0da07b7ef479ad9f9003c2f471df510","observations":6,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":20,"missing":"[]","phase":"HUNT","elapsed_ms":30000,"winner":"","digest":"c01792a6e9c164de922746629ab795b8bf20e864294077bc2b2f5a1b52d95aae","observations":7,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"","ready":4,"revision":22,"missing":"[]","phase":"HUNT","elapsed_ms":30000,"winner":"","digest":"b192bb1eaabde1bb6e753e496ff54f3ccc8ec21f20af85147fd426871374d7ee","observations":9,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action sent to the room.","ready":4,"revision":24,"missing":"[]","phase":"HUNT","elapsed_ms":35000,"winner":"","digest":"2f6b92abca55bdd9ea6222dd142918aec519c46606ddba00d911c5b95c0810de","observations":9,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":2,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action sent to the room.","ready":4,"revision":24,"missing":"[]","phase":"HUNT","elapsed_ms":35000,"winner":"","digest":"2f6b92abca55bdd9ea6222dd142918aec519c46606ddba00d911c5b95c0810de","observations":9,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":2,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action sent to the room.","ready":4,"revision":24,"missing":"[6acf9f8d7cb32125]","phase":"HUNT","elapsed_ms":35000,"winner":"","digest":"2f6b92abca55bdd9ea6222dd142918aec519c46606ddba00d911c5b95c0810de","observations":9,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":2,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action sent to the room.","ready":4,"revision":24,"missing":"[6acf9f8d7cb32125]","phase":"HUNT","elapsed_ms":35000,"winner":"","digest":"2f6b92abca55bdd9ea6222dd142918aec519c46606ddba00d911c5b95c0810de","observations":9,"ghost":true,"jam_used":false,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":2,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":25,"missing":"[]","phase":"HUNT","elapsed_ms":35000,"winner":"","digest":"dc73aaf1fd9c10fdb80fbc4388f0d55bc22c6252f909165fa05bedd1917cdf4b","observations":9,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"Action confirmed by the room.","ready":4,"revision":27,"missing":"[]","phase":"HUNT","elapsed_ms":38273,"winner":"","digest":"811bbe287d4f59fd851796e7b52a78f408b54e174711d025456145f945628943","observations":10,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Encrypted local links active.","message":"Action confirmed by the room.","ready":4,"revision":28,"missing":"[]","phase":"HUNT","elapsed_ms":40516,"winner":"","digest":"248565c92cd7421f6cb22ec77b0aaa36787d7a2f253093552bb92d0f40056fc2","observations":10,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":30,"missing":"[]","phase":"HUNT","elapsed_ms":40516,"winner":"","digest":"41d9206405319af49a7da71bc6c287a5e2298d2f4dc349ac2b81dea513760842","observations":12,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":31,"missing":"[]","phase":"HUNT","elapsed_ms":40516,"winner":"","digest":"fc6ec476d72e0fbe0fa598ab48dc4197592a30dbdf3b9022e65fe155a67993f2","observations":13,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":31,"missing":"[]","phase":"HUNT","elapsed_ms":40516,"winner":"","digest":"fc6ec476d72e0fbe0fa598ab48dc4197592a30dbdf3b9022e65fe155a67993f2","observations":13,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":33,"missing":"[]","phase":"HUNT","elapsed_ms":50516,"winner":"","digest":"951409812333f3aa60856fd701aaa2618f6debb2cf2f0a12586aa79418f0a1ec","observations":13,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":34,"missing":"[]","phase":"HUNT","elapsed_ms":50516,"winner":"","digest":"adc38360925f237cf52d016942ddc0da7d70d655e24df4d097e11fa6f157462f","observations":14,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":36,"missing":"[]","phase":"HUNT","elapsed_ms":50516,"winner":"","digest":"38ba123372fc17393cd67dff9f9e4b94ac2a1e4f699612d349f6d2e8c091144f","observations":16,"ghost":true,"jam_used":true,"corrupt_used":false,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":38,"missing":"[]","phase":"HUNT","elapsed_ms":55516,"winner":"","digest":"9f0ecdb01a234b88dd2c24510afbcf805d9db17ca887828d8bd2824c92ad07dd","observations":16,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":41,"missing":"[]","phase":"HUNT","elapsed_ms":60516,"winner":"","digest":"c35e7541a4684ed5797e5bfb756a6988eb336f50cf38ca3b6011a2e8779b6587","observations":16,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":43,"missing":"[]","phase":"HUNT","elapsed_ms":60516,"winner":"","digest":"adfbcc193f10b93bd08762b677f94607c1cd0c9dbded436cab52c05e58223271","observations":18,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":45,"missing":"[]","phase":"HUNT","elapsed_ms":65516,"winner":"","digest":"57ed4a8ac3927c9b372ffed92037f54ecfd6a09c930f7a95134c6fc2377f884a","observations":19,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":0,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":47,"missing":"[]","phase":"HUNT","elapsed_ms":65516,"winner":"","digest":"1643b4c7e3e2a9f483876aaedf07eacf35576ffe9c74aa632548f7252281db5c","observations":19,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":49,"missing":"[]","phase":"HUNT","elapsed_ms":65516,"winner":"","digest":"43e565a7b8a5b0f0344df147fb9ff2eec4f740a80c6f51c7c807d0e9734cf3b2","observations":19,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":51,"missing":"[]","phase":"HUNT","elapsed_ms":70516,"winner":"","digest":"fd5e01b8b5a542bb2a8944f49f3cccec42cd7727046ffd9ddcfdcf9d9437bfa9","observations":19,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":53,"missing":"[]","phase":"HUNT","elapsed_ms":70516,"winner":"","digest":"550ed2d86c78f1435ea7e1a7e2b49b067111f8e75b8cb23a39e2f17d45943976","observations":21,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":55,"missing":"[]","phase":"HUNT","elapsed_ms":70516,"winner":"","digest":"4ad1f8230f84e473b2ee2f93ab2ded691ecc66de0a59f13b14e1ccab369987f4","observations":22,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":57,"missing":"[]","phase":"HUNT","elapsed_ms":70516,"winner":"","digest":"fc450c4d87e7035f72965f873385a28141592885340016dd5446c831be66e892","observations":22,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":59,"missing":"[]","phase":"HUNT","elapsed_ms":75516,"winner":"","digest":"ce35e566b52bf95a395c49631ef2d3579950c77df368008e430b18d3e568e2fd","observations":22,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":60,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"4301c2ad584bdfd0c7f50bbbce1398cd12fe90a01a799e98e96cf85016e6d1f5","observations":22,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":61,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"fa2140da846fb38e9ec5c82859c5115b2901944bb177a8e2ba8a3ea59c9795a5","observations":22,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":63,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"66929b6e2781ff4dfd7fb058a4352fc8f11d9c48445ceb3554ea2b3bdbb4e7ef","observations":24,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":1,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":65,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"2f989ffa80284715e7ecaebcabbd835dd1221659f908c89ba754240e5081a688","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":67,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"89b62ec57362ce471675c2e79edfc26c41aaac2b412b2052abd0fa1588c3d150","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":69,"missing":"[]","phase":"HUNT","elapsed_ms":80516,"winner":"","digest":"532fd39a83923eddbb06c949032bac90abe10bc6d552b3580f990a409438a5ec","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":72,"missing":"[]","phase":"HUNT","elapsed_ms":85516,"winner":"","digest":"b6e3878d59b556c1cb12b8b9ac68b6da50ed22f7396b61f4c37ebc9914d57fd2","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":74,"missing":"[]","phase":"HUNT","elapsed_ms":90516,"winner":"","digest":"c082be13ae9b878875c8d302b11881ee509d3fe36b8f22a2379245a257e1d18a","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":75,"missing":"[]","phase":"HUNT","elapsed_ms":90516,"winner":"","digest":"39f8b558053a13ce2e1a6d728c79bba413489fe8e044bf9ae9dcd8088bdc3333","observations":26,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":2,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":78,"missing":"[]","phase":"HUNT","elapsed_ms":90516,"winner":"","digest":"996aadf7fa8b943777617d767a33a7c66783f83e61808db1d327401b729ee5c7","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":80,"missing":"[]","phase":"HUNT","elapsed_ms":100516,"winner":"","digest":"37ef3fc0b6141ffda8a6a1846bf53a3f5fa5da3ec82f45edbb719c70a13bd219","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":81,"missing":"[]","phase":"HUNT","elapsed_ms":100516,"winner":"","digest":"dc12168b95728717b7622d8c1db7f19d2957e5518873d1dfb5875b73e6978e36","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":82,"missing":"[]","phase":"HUNT","elapsed_ms":100516,"winner":"","digest":"9a4954d635edea59baec7c7065affd23f07e875083087be86d6f41e508109b65","observations":26,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":84,"missing":"[]","phase":"HUNT","elapsed_ms":100516,"winner":"","digest":"72f691b124794623eb8d9e1a429b3b660563d6912287b86f697fadfb66907506","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":false,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action sent to the room.","ready":4,"revision":85,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":100516,"winner":"","digest":"2f46bbe1785eb7b6925c7e306cb71e97baa277ecf217e128cecd3972f06f4c87","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":false,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":86,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":100516,"winner":"","digest":"8caf1a8063d6e5dd50a4b1d640d8a5d52a8d027c15f9dc54c4ce95693806b604","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":87,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":105516,"winner":"","digest":"477ae0c1750a0884efd616fd6785d04d9fd4bfb48b3911ac33c3d0dec67cc334","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":88,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":110516,"winner":"","digest":"e4e0bda6318633ebc66734f9678bd9f04aaea5b45eb04cf46748c358933b32e0","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":89,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":110516,"winner":"","digest":"4d1e3c522ee0ea065e43520758cd9c8878b21d8c7987cd2c87fc9b254174660a","observations":25,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":90,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":110516,"winner":"","digest":"8cda418fb04d62fbc1b048e0ddcff63a51e84e9835b06b3b70126a7eab346517","observations":26,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":91,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":110516,"winner":"","digest":"3b21fd5885db54114326cc6f61f61975f96bf8011bfadba101e8116f38c3dc24","observations":27,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":93,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":110516,"winner":"","digest":"0dcbebb49b884922ae41b479af1fe1cbaeab5c7169bebf5ac0fc4f0340c7d0fe","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"ROUND","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":96,"missing":"[]","phase":"SHOWDOWN","elapsed_ms":115516,"winner":"","digest":"1e8cc37d40597e9c2f12229d5e1c2fa47d04a56bbefd105f046b1c9689fbb0f7","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=RADIO_PROGRESS {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"RESULTS","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":97,"missing":"[]","phase":"ENDED","elapsed_ms":115516,"winner":"HUNTERS","digest":"446df111671458f6846f6be550fe5ae9cbda0520ff57d94fff1389a151dde877","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=RADIO_RESULT {"name":"Peer2","self":"905184439090fb68","members":4,"links":3,"screen":"RESULTS","status":"Discovering phones in this room…","message":"Action confirmed by the room.","ready":4,"revision":97,"missing":"[]","phase":"ENDED","elapsed_ms":115516,"winner":"HUNTERS","digest":"446df111671458f6846f6be550fe5ae9cbda0520ff57d94fff1389a151dde877","observations":28,"ghost":true,"jam_used":true,"corrupt_used":true,"haunt_used":true,"delivered":3,"exposed":true,"peak_links":3}
+
+INSTRUMENTATION_CODE: -1

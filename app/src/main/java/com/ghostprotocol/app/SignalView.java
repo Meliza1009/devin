@@ -115,14 +115,19 @@ public final class SignalView extends View {
         }
     for (Game.Player p : game.players) {
       PointF point = positions.get(p.id());
-      boolean eligible = game.evidence(p.id()).eligible();
-      paint.setColor(p.id().equals(self) ? lime : eligible ? 0xffe6b970 : 0xff8ca093);
+      boolean carrying = !game.inventory(p.id()).isEmpty();
+      paint.setColor(
+          game.exposed && p.id().equals(game.ghost)
+              ? NativeUi.RED
+              : p.id().equals(self) ? NativeUi.TEAL : carrying ? NativeUi.AMBER : 0xff8ca093);
       paint.setStyle(Paint.Style.FILL);
       c.drawCircle(point.x, point.y, dp(7), paint);
       paint.setTextAlign(Paint.Align.CENTER);
       paint.setTypeface(Typeface.create("sans-serif-medium", Typeface.NORMAL));
       paint.setTextSize(dp(11));
-      c.drawText(p.id().equals(self) ? "You" : p.name(), point.x, point.y + dp(23), paint);
+      String name = p.id().equals(self) ? "You" : p.name();
+      if (name.length() > 10) name = name.substring(0, 9) + "…";
+      c.drawText(name, point.x, point.y + dp(23), paint);
     }
   }
 

@@ -11,6 +11,7 @@ public class ReplicaTest {
     final ArrayDeque<byte[]> packets = new ArrayDeque<>();
     final Set<String> offline = new HashSet<>();
     final Set<String> dropOnce = new HashSet<>();
+    final Map<String, List<String>> rejections = new HashMap<>();
 
     Mesh() {
       this(4);
@@ -34,7 +35,12 @@ public class ReplicaTest {
                 new Replica.Listener() {
                   public void changed() {}
 
-                  public void rejected(String a, String b) {}
+                  public void rejected(String a, String requestId, String b) {
+                    if (a.equals(id))
+                      rejections
+                          .computeIfAbsent(id, k -> new ArrayList<>())
+                          .add(requestId + ":" + b);
+                  }
                 }));
     }
 
@@ -66,6 +72,18 @@ public class ReplicaTest {
       }
       deliver();
     }
+  }
+
+  @Test
+  public void lostRejectionRetriesUntilTheSubmittingPhoneReceivesItsOutcome() {
+    Mesh mesh = new Mesh();
+    mesh.dropOnce.add("REJECT@b");
+    mesh.nodes.get("b").submit(Game.Event.tag("b", "d"));
+    mesh.deliver();
+    assertFalse(mesh.rejections.containsKey("b"));
+    mesh.nodes.get("b").heartbeat();
+    mesh.settle();
+    assertEquals(1, mesh.rejections.getOrDefault("b", List.of()).size());
   }
 
   @Test

@@ -82,7 +82,10 @@ public final class Session implements AutoCloseable {
   private String leader = "";
   private boolean started, begun, closed, suspended;
   private long lastPulse, lastTick, lastSyncProgress, suspendAt, lastProposalAt;
-  private int observedInterval = -1, demoZone, lastBotTagAt;
+  private int observedInterval = -1, demoZone;
+  private long lastBotAction;
+  private Game.Event pendingAction;
+  public final Set<Game.Station> verifiedCheckpoints = EnumSet.noneOf(Game.Station.class);
   private final Map<String, Integer> submittedObservations = new HashMap<>();
   public String status = "Opening local radio…";
 
@@ -153,12 +156,48 @@ public final class Session implements AutoCloseable {
   }
 
   public String zone() {
-    return new String[] {"Window", "Center", "Door"}[demoZone];
+    return new String[] {"Vault", "Workshop", "Exit"}[demoZone];
   }
 
   public void move() {
     demoZone = (demoZone + 1) % 3;
-    listener.changed();
+    scanStation(Game.Station.values()[demoZone + 1]);
+  }
+
+  public boolean sending() {
+    return pendingAction != null;
+  }
+
+  public String scanStation(Game.Station station) {
+    if (screen == Screen.LOBBY) {
+      verifiedCheckpoints.add(station);
+      listener.changed();
+      return "";
+    }
+    if (training) demoZone = station.ordinal() - 1;
+    return act(Game.Event.scan(self, station));
+  }
+
+  public void practiceSendInstructions(String taskId) {
+    if (!training) return;
+    Game.Task task = game().tasks.get(taskId);
+    if (task != null && task.reader.equals(self)) {
+      game().apply(Game.Event.answer(task.operator, task.id, task.answerCode()));
+      listener.changed();
+    }
+  }
+
+  public void practicePartnerLeads() {
+    if (!training || game().taskFor(self) != null) return;
+    Game g = game();
+    for (String id : g.ids())
+      if (!id.equals(self) && !id.equals(g.ghost)) {
+        g.apply(Game.Event.scan(id, Game.Station.VAULT));
+        String error = g.apply(Game.Event.task(id, "BREACH", ""));
+        if (!error.isEmpty()) listener.message(error);
+        listener.changed();
+        return;
+      }
   }
 
   public List<Member> lobbyMembers() {
@@ -192,6 +231,11 @@ public final class Session implements AutoCloseable {
 
   public void startRound() {
     if (!host || started) return;
+    if (verifiedCheckpoints.size() != 3) {
+      listener.message(
+          "Place and scan the Vault, Workshop, and Exit cards before assigning roles.");
+      return;
+    }
     List<Member> lobby = lobbyMembers();
     if (lobby.size() < 4 || lobby.size() > 8) {
       listener.message("Gather 4–8 phones to start.");
@@ -221,13 +265,22 @@ public final class Session implements AutoCloseable {
               @Override
               public void changed() {
                 lastSyncProgress = SystemClock.elapsedRealtime();
+                if (pendingAction != null && game().hasApplied(pendingAction.requestId)) {
+                  pendingAction = null;
+                  listener.message("Action confirmed by the room.");
+                }
                 if (game().phase == Game.Phase.ENDED) screen = Screen.RESULTS;
                 listener.changed();
               }
 
               @Override
-              public void rejected(String actor, String reason) {
-                if (actor.equals(self)) listener.message(reason);
+              public void rejected(String actor, String requestId, String reason) {
+                if (actor.equals(self)
+                    && pendingAction != null
+                    && pendingAction.requestId.equals(requestId)) {
+                  pendingAction = null;
+                  listener.message(reason);
+                }
               }
             });
     lastSyncProgress = SystemClock.elapsedRealtime();
@@ -257,6 +310,7 @@ public final class Session implements AutoCloseable {
     if (g == null) return "A round has not started.";
     if (paused() || suspended) return "Wait for all phones to reconnect.";
     if (!begun) return "Wait until everyone has read their role.";
+    if (pendingAction != null) return "Waiting for your previous action to be confirmed.";
     Game copy = g.copy();
     String error = copy.apply(event);
     if (!error.isEmpty()) return error;
@@ -266,6 +320,7 @@ public final class Session implements AutoCloseable {
       listener.changed();
     } else {
       if (synchronizing()) return "The room is synchronizing. Try again in a moment.";
+      pendingAction = event;
       replica.submit(event);
       listener.message("Action sent to the room.");
     }
@@ -367,7 +422,7 @@ public final class Session implements AutoCloseable {
       mesh.send(
           Wire.bytes(
               o -> {
-                o.writeInt(1);
+                o.writeInt(Game.VERSION);
                 Wire.string(o, type);
                 Wire.string(o, self);
                 Wire.blob(o, body);
@@ -377,7 +432,11 @@ public final class Session implements AutoCloseable {
   private void receive(byte[] packet) {
     try {
       DataInputStream i = Wire.input(packet);
-      if (i.readInt() != 1) return;
+      if (i.readInt() != Game.VERSION) {
+        status = "Version mismatch. Install Haunted Heist 2.0 on every phone.";
+        listener.changed();
+        return;
+      }
       String type = Wire.string(i), sender = Wire.string(i);
       byte[] body = Wire.blob(i, 120000);
       if (i.available() != 0 || sender.equals(self) || !sender.matches("[0-9a-f]{16}")) return;
@@ -519,9 +578,7 @@ public final class Session implements AutoCloseable {
       source = others.get(Math.floorMod((int) g.seed, others.size()));
     }
     int band = strength(observer, source);
-    if (g.activeAbility.equals("FADE") && !observer.equals(g.ghost)) band = Math.max(0, band - 1);
-    if (g.activeAbility.equals("ECHO") && !observer.equals(g.ghost))
-      band = Math.max(band, strength(observer, g.echoTarget));
+    if (g.roomEvent.equals("BLACKOUT") && g.eventUntil > g.elapsedMs) band = 0;
     int noise = Math.floorMod(Objects.hash(g.seed, observer, g.interval()), 7);
     if (noise == 0) band = Math.max(0, band - 1);
     if (noise == 1) band = Math.min(2, band + 1);
@@ -530,41 +587,73 @@ public final class Session implements AutoCloseable {
 
   private void simulate() {
     Game g = game();
-    if (g.elapsedMs < 10000) return;
-    for (String id : g.ids())
-      if (submittedObservations.getOrDefault(id, -1) != g.interval()) {
-        g.apply(observation(id));
-        submittedObservations.put(id, g.interval());
+    if (g.elapsedMs >= 10000) {
+      for (String id : g.ids()) {
+        if (submittedObservations.getOrDefault(id, -1) != g.interval()) {
+          // Practice partners follow your selected checkpoint. No radio readings are claimed.
+          List<String> near = new ArrayList<>(g.ids());
+          near.remove(id);
+          g.apply(Game.Event.observation(id, observation(id).value, near));
+          submittedObservations.put(id, g.interval());
+        }
       }
+    }
     if (g.vote != null) {
-      String suspect = g.vote.suspect;
-      for (String id : g.ids())
+      for (String id : g.ids()) {
         if (!id.equals(self)
-            && !id.equals(suspect)
             && g.vote != null
-            && !g.vote.ballots.containsKey(id)) {
-          // Bots reason imperfectly from evidence, allowing both successful and wrong convictions.
-          boolean yes =
-              suspect.equals(g.ghost) || Math.floorMod(Objects.hash(id, g.interval()), 3) == 0;
-          g.apply(Game.Event.vote(id, yes));
+            && !id.equals(g.vote.suspect)
+            && !g.vote.ballots.containsKey(id)) g.apply(Game.Event.vote(id, true));
+      }
+    }
+    if (g.phase == Game.Phase.ENDED || SystemClock.elapsedRealtime() - lastBotAction < 1500) return;
+    lastBotAction = SystemClock.elapsedRealtime();
+    Game.Task own = g.taskFor(self);
+    if (own != null && !own.active()) {
+      for (String id : g.ids())
+        if (!id.equals(self) && !(g.exposed && id.equals(g.ghost)) && g.taskFor(id) == null) {
+          g.apply(Game.Event.scan(own.operator, own.station));
+          g.apply(Game.Event.scan(id, own.station));
+          if (g.apply(Game.Event.join(id, own.id)).isEmpty()) break;
         }
     }
-    if (g.phase == Game.Phase.HUNT
-        && g.elapsedMs > 90000
-        && g.elapsedMs - lastBotTagAt > 45000
-        && g.vote == null) {
-      lastBotTagAt = g.elapsedMs;
-      for (String suspect : g.ids())
-        if (g.evidence(suspect).eligible() && !g.cleared.contains(suspect)) {
-          boolean done = false;
-          for (String id : g.ids())
-            if (!id.equals(self) && !id.equals(suspect) && g.recentlyNear(id, suspect))
-              if (g.apply(Game.Event.tag(id, suspect)).isEmpty()) {
-                done = true;
-                break;
-              }
-          if (done) break;
+    for (Game.Offer offer : new ArrayList<>(g.offers.values())) {
+      if (!offer.to().equals(self)) g.apply(Game.Event.accept(offer.to(), offer.relic()));
+    }
+    for (String id : g.ids())
+      if (!id.equals(self) && !id.equals(g.ghost)) {
+        if (g.seals.containsKey(id)) continue;
+        if (!g.inventory(id).isEmpty()) {
+          Game.Relic r = g.inventory(id).get(0);
+          Game.Station destination =
+              r.state == Game.RelicState.RAW ? Game.Station.WORKSHOP : Game.Station.EXIT;
+          g.apply(Game.Event.scan(id, destination));
+          g.apply(
+              r.state == Game.RelicState.RAW
+                  ? Game.Event.seal(id, r.id)
+                  : Game.Event.deposit(id, r.id));
         }
+      }
+    if (isGhost()) {
+      for (Game.Task task : new ArrayList<>(g.tasks.values())) {
+        if (task.active() && g.elapsedMs - task.createdAt > 7000)
+          g.apply(Game.Event.answer(task.operator, task.id, task.answerCode()));
+      }
+      if (g.tasks.isEmpty()) {
+        List<String> crew = new ArrayList<>(g.ids());
+        crew.remove(self);
+        String operator = crew.get((g.elapsedMs / 30000) % crew.size()),
+            reader = crew.get(((g.elapsedMs / 30000) + 1) % crew.size());
+        Game.Station station = g.delivered() == 3 ? Game.Station.EXIT : Game.Station.VAULT;
+        g.apply(Game.Event.scan(operator, station));
+        g.apply(Game.Event.scan(reader, station));
+        String kind =
+            g.stationOpen(station) ? (g.delivered() == 3 ? "EXTRACT" : "BREACH") : "REPAIR";
+        if (g.apply(Game.Event.task(operator, kind, "")).isEmpty()) {
+          Game.Task task = g.taskFor(operator);
+          g.apply(Game.Event.join(reader, task.id));
+        }
+      }
     }
   }
 
